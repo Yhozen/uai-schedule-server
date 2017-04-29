@@ -2,3 +2,10 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+deploy:
+  provider: heroku
+  api_key:
+    secure: "abbf9b3b-49a8-45b4-9fb3-ec428b4cae3a"
+  run:
+    - "npm run babel"
+    - "npm start"
