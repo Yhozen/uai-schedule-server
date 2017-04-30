@@ -1,14 +1,6 @@
-# Funciones y datos necesarios
+# Server API salas y clases UAI
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Build Status](https://travis-ci.org/Yhozen/uai-schedule-server.svg?branch=master)](https://travis-ci.org/Yhozen/uai-schedule-server)
 
-## document.querySelector("#divPantalla > table:nth-child(1) > tbody:nth-child(1)").childElementCount - 1
-Cuantas filas existen
-let Rows
-## document.querySelector("#divPantalla > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(N)")
-Nos devuelve la fila donde N va desde 2 hasta Rows + 1
-let theRow
-## theRow.childNodes[1].childNodes[1].textContent
-Horario
-## theRow.childNodes[3].childNodes[3].textContent
-Asignatura
-## theRow.childNodes[7].childNodes[1].textContent
-Sala
+## Funciones
+Extrae datos de las salas y luego las expone mediante GET, los parametros que acepta son finalizado (boolean, para mostrar ya finalizados) y adelanto (número, para mostrar dias siguientes o pasados)
